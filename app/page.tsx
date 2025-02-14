@@ -14,10 +14,20 @@ export default function ValentinePage() {
     "You're breaking my heart... 💔",
     "Please don't do this... 😭",
     "I will cry... 😭💔",
+    "You're making a big mistake! 🤨",
+    "Think about the consequences... 🤔",
+    "Your future self will regret this! 😭",
+    "Even Thanos had a heart... 😢",
+    "Come on, don't be like that... 🙄",
+    "Are you playing hard to get? 👀",
+    "My mom said you're the one! 🥺",
+    "Last chance... I'm begging you! 🙏",
+    "Fine, but I'm taking the cat! 🐱💔",
+    "I will haunt your dreams! 👻💘",
   ];
 
   const handleNoClick = () => {
-    setYesSize((prev) => Math.min(prev + 0.3, 2.5)); // Max growth limit
+    setYesSize((prev) => prev + 0.3); // No max limit, keeps growing!
     setNoClicks((prev) => Math.min(prev + 1, messages.length - 1));
   };
 
