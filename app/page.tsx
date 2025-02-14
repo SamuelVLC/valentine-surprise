@@ -8,7 +8,7 @@ export default function ValentinePage() {
   const [accepted, setAccepted] = useState(false);
 
   const messages = [
-    "Do you want to be my Valentine? 💕",
+    "Do you want to be my Valentine? ❤️",
     "Are you sure? 😢",
     "Really sure? 🥺",
     "You're breaking my heart... 💔",
@@ -69,7 +69,7 @@ export default function ValentinePage() {
               animate={{ scale: yesSize }}
               transition={{ type: "spring", stiffness: 200 }}
               className="bg-red-500 text-white px-6 py-3 rounded-xl shadow-lg hover:bg-red-600 font-bold min-w-[120px] max-w-[250px] relative z-10"
-              style={{ transformOrigin: "center" }}
+              style={{ transformOrigin: "center", position: "relative" }}
             >
               Yes 💖
             </motion.button>
@@ -83,6 +83,7 @@ export default function ValentinePage() {
               No 💔
             </motion.button>
           </div>
+          <div className="mt-4 h-10" />
         </>
       )}
     </div>
