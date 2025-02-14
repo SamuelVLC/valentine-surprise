@@ -63,12 +63,12 @@ export default function ValentinePage() {
           </motion.p>
 
           {/* Buttons stay in place */}
-          <div className="flex flex-col items-center gap-6 w-full min-h-[150px]">
+          <div className="flex flex-col items-center gap-6 w-full min-h-[150px] relative">
             <motion.button
               onClick={() => setAccepted(true)}
               animate={{ scale: yesSize }}
               transition={{ type: "spring", stiffness: 200 }}
-              className="bg-red-500 text-white px-6 py-3 rounded-xl shadow-lg hover:bg-red-600 font-bold min-w-[120px] max-w-[250px]"
+              className="bg-red-500 text-white px-6 py-3 rounded-xl shadow-lg hover:bg-red-600 font-bold min-w-[120px] max-w-[250px] relative z-10"
             >
               Yes 💖
             </motion.button>
@@ -77,7 +77,7 @@ export default function ValentinePage() {
               onClick={handleNoClick}
               animate={{ y: yesSize * 10 }}
               transition={{ type: "spring", stiffness: 100 }}
-              className="bg-gray-500 text-white px-6 py-3 rounded-xl shadow-lg hover:bg-gray-600 min-w-[120px]"
+              className="bg-gray-500 text-white px-6 py-3 rounded-xl shadow-lg hover:bg-gray-600 min-w-[120px] relative z-10"
             >
               No 💔
             </motion.button>
