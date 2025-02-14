@@ -69,13 +69,14 @@ export default function ValentinePage() {
               animate={{ scale: yesSize }}
               transition={{ type: "spring", stiffness: 200 }}
               className="bg-red-500 text-white px-6 py-3 rounded-xl shadow-lg hover:bg-red-600 font-bold min-w-[120px] max-w-[250px] relative z-10"
+              style={{ transformOrigin: "center" }}
             >
               Yes 💖
             </motion.button>
 
             <motion.button
               onClick={handleNoClick}
-              animate={{ y: yesSize * 10 }}
+              animate={{ y: yesSize * 5 }}
               transition={{ type: "spring", stiffness: 100 }}
               className="bg-gray-500 text-white px-6 py-3 rounded-xl shadow-lg hover:bg-gray-600 min-w-[120px] relative z-10"
             >
